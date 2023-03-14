@@ -1,0 +1,51 @@
+doctype html
+html
+  head
+    title Draw on Canvas
+    script(src="https://cdn.socket.io/socket.io-3.0.1.min.js")
+    script(src="/javascripts/tapestry.js")
+      
+
+  body
+    h1 Draw on Canvas
+    canvas(id="canvas" width="1000" height="1000")
+    form#gradient
+      label(for="pair1") Pair 1
+      input(type="radio" id="pair1" name="colorPair" value="gradient1" checked)
+      div(style="background-color: #6AB3B8; height: 50px; width: 50px; display: inline-block; margin-right: 10px;")
+      div(style="background-color: #4B778D; height: 50px; width: 50px; display: inline-block;")
+      
+      label(for="pair2") Pair 2
+      input(type="radio" id="pair2" name="colorPair" value="gradient2")
+      div(style="background-color: #1D2D44; height: 50px; width: 50px; display: inline-block; margin-right: 10px;")
+      div(style="background-color: #2E5468; height: 50px; width: 50px; display: inline-block;")
+      
+      label(for="pair3") Pair 3
+      input(type="radio" id="pair3" name="colorPair" value="gradient3")
+      div(style="background-color: #395C6B; height: 50px; width: 50px; display: inline-block; margin-right: 10px;")
+      div(style="background-color: #668C8C; height: 50px; width: 50px; display: inline-block;")
+      
+      label(for="pair4") Pair 4
+      input(type="radio" id="pair4" name="colorPair" value="gradient4")
+      div(style="background-color: #009B9E; height: 50px; width: 50px; display: inline-block; margin-right: 10px;")
+      div(style="background-color: #B5C5D1; height: 50px; width: 50px; display: inline-block;")
+      
+      label(for="pair5") Pair 5
+      input(type="radio" id="pair5" name="colorPair" value="gradient5")
+      div(style="background-color: #9E9AA2; height: 50px; width: 50px; display: inline-block; margin-right: 10px;")
+      div(style="background-color: #5B6E7D; height: 50px; width: 50px; display: inline-block;")
+      
+      label(for="pair6") Pair 6
+      input(type="radio" id="pair6" name="colorPair" value="gradient6")
+      div(style="background-color: #1F3134; height: 50px; width: 50px; display: inline-block; margin-right: 10px;")
+      div(style="background-color: #1B262C; height: 50px; width: 50px; display: inline-block;")
+      
+      label(for="pair7") Pair 7
+      input(type="radio" id="pair7" name="colorPair" value="gradient7")
+      div(style="background-color: #213640; height: 50px; width: 50px; display: inline-block; margin-right: 10px;")
+      div(style="background-color: #3E5C5D; height: 50px; width: 50px; display: inline-block;")
+
+      label(for="pair8") Pair 8
+      input(type="radio" id="pair8" name="colorPair" value="gradient8")
+      div(style="background-color: #5B6F5C; height: 50px; width: 50px; display: inline-block; margin-right: 10px;")
+      div(style="background-color: #A7C5BD; height: 50px; width: 50px; display: inline-block;")
