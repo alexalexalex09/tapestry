@@ -60,11 +60,12 @@ function setupCanvas() {
   });
 
   function draw(x, y, color) {
-    ctx.beginPath();
-    ctx.moveTo(lastX, lastY);
-    ctx.lineTo(x, y);
     ctx.strokeStyle = color;
     ctx.lineWidth = 50;
+    ctx.lineCap = "round";
+    ctx.beginPath();
+    ctx.moveTo(lastX, lastY);
+    ctx.quadraticCurveTo(lastX, lastY, (lastX + x) / 2, (lastY + y) / 2);
     ctx.stroke();
     lastX = x;
     lastY = y;
